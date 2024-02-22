@@ -16,6 +16,7 @@ public class lesson_16_06 {
     //      Код, который работает с переменной имя и имя2
     //  }
 
+    //Пример копирования файлов:
     public static void main(String[] args) {
         String src = "c:\\projects\\log.txt";
         String dest = "c:\\projects\\copy.txt";
