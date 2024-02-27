@@ -84,14 +84,11 @@ public class lesson_16_33 {
     //В противном случае выводить ничего не нужно.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String str1 = scanner.nextLine();           //Ввод: c:\
-        String str2 = scanner.nextLine();           //Ввод: c:\test\test.txt
-        Path path1 = Path.of(str1);
-        Path path2 = Path.of(str2);
+        Path path1 = Path.of(scanner.nextLine());           //Ввод: c:\
+        Path path2 = Path.of(scanner.nextLine());           //Ввод: c:\test\test.txt
         try
         {
-            Path result = path1.relativize(path2);
-            System.out.println(result);             //Вывод: test\test.txt
+            System.out.println(path1.relativize(path2));    //Вывод: test\test.txt
         }
         catch (IllegalArgumentException e)
         {
